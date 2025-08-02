@@ -16,7 +16,7 @@ jobs:
 
       - name: Deploy dashboard
         run: |
-          curl -X POST http://<IP>:3000/api/dashboards/db \
+          curl -X POST http://<localhost>:3000/api/dashboards/db \
             -H "Content-Type: application/json" \
             -u admin:admin \
             --data-binary @dashboard/my_dashboard.json
